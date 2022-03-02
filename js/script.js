@@ -8,7 +8,7 @@ let row_to_del_arr = [];
 // 
 var clickModalImgFun = false;
 var thumbs_folder = '/uploads/thumbs/';
-var thumb_default = '/assets/lc/img/thumb-default.png';
+var thumb_default = '/assets/lc-admin-assets/img/thumb-default.png';
 let tmp_gallery_array = {};
 // 
 var custom_textarea_xs_toolbar = ['bold', 'italic', 'ul', 'link'];
