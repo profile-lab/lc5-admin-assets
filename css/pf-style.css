@@ -420,6 +420,21 @@ body{ font-family: Helvetica, sans-serif; background: #FFF; line-height: 1.4; fo
 
 
 
+.dashboard-main-content{margin-bottom: 60px;}
+	.dashboard-section-header{margin: 20px 0 0 0; display: flex; align-items: center; color: var(--arancione);}
+		.dashboard-section-header-count{font-size: 18px; margin-left: 5px; line-height: 0; background: var(--arancione); display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; color: #FFF; border-radius: 50%;}
+	
+
+		.dashboard-row{display: flex; margin: 10px 0;}
+			.dashboard-block{margin-right: 2%; margin-bottom: 20px; width: 48%; padding: 20px; box-sizing: border-box; background: #FFF; border-radius: 10px; box-shadow: 0 30px 30px #00000017;}
+				.dashboard-block h3{font-size: 11px; text-transform: uppercase; font-weight: bold; margin-bottom: 2px; color: #6c6c6c; letter-spacing: 0.1em; margin-bottom: 10px;}
+				.dashboard-block ul li{padding: 10px 0; border-top: 1px solid #cacaca;}
+					.dashboard-block ul li a{display: flex; justify-content: space-between; align-content: center;}
+					.dashboard-block ul li a h5{font-size: 16px;}
+				
+					.updated_at{display: flex; align-items: center; text-align: right; white-space: nowrap; padding-left: 10px; box-sizing: border-box;}
+				
+				
 
 
 		.row-sort-placeholder{
@@ -452,6 +467,10 @@ body{ font-family: Helvetica, sans-serif; background: #FFF; line-height: 1.4; fo
 		    border-radius: 10px;
 		}
 		
+
+
+
+
 
 
 
@@ -719,6 +738,13 @@ body{ font-family: Helvetica, sans-serif; background: #FFF; line-height: 1.4; fo
 	
 	.selectize-dropdown .active{background: #dff3ff}
 
+
+	.footer_flex {
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		align-items: center;
+	}
 
 @media (max-width: 1300px) {
 
