@@ -22,6 +22,23 @@ var min_textarea_toolbar = custom_textarea_toolbar_remove.concat(['ul', 'paragra
 $(document).ready(function () {
     attivaEditors();
 
+    $('label.form-switch').each(function(e) {
+        var valoreInput = $('select', this).val();
+        if (valoreInput > 0) {
+            $(this).addClass('active');
+        }
+    });
+    $('label.form-switch i').click(function(e) {
+        const myC_label = $(this).parent();
+        const myC_select = myC_label.find('select');
+        var valoreInput = myC_select.val();
+        var nVal = 1;
+        if (valoreInput > 0) {
+            nVal = 0;
+        }
+        myC_select.val(''+nVal+'');
+        myC_label.toggleClass('active');
+    });
 
     // $('.form-field-simple_css_class select, .form-field-gallery_css_class select, .form-field-columns_css_class select, .form-field-component_css_class select').change(function(){
     $('body').on('change', '.select_css_class', function () {
