@@ -57,6 +57,7 @@ function updateVimeoVideoStatus(__video_id) {
 $(document).ready(function () {
     // $('#loading_video_upload_cnt').hide(1);
     $('#upload_on_vimeo_btn').attr('disabled', true);
+    // $('#set_vimeo_by_vimeo_video_url_btn').attr('disabled', true);
 
     if ($('#status_video_on_vimeo').val()) {
         if ($('#status_video_on_vimeo').val() != 'available') {
@@ -133,8 +134,67 @@ $(document).ready(function () {
             });
         }
     });
+   
     //------------------------------------------------------------
     //------------------------------------------------------------
+    $('#set_vimeo_by_vimeo_video_url_btn').click(function (e) {
+        e.preventDefault();
+        const input_rel_id = $(this).attr('meta-rel');
+        const input_rel_value = $('#' + input_rel_id).val();
+        if (isValidHttpUrl(input_rel_value) && input_rel_value.includes("vimeo.com/")) {
+            const pathname = new URL(input_rel_value).pathname;
+            const uri_part_arr = pathname.split('/');
+            if(Array.isArray(uri_part_arr)){
+                const uri_part_id = uri_part_arr[uri_part_arr.length-1];
+                if(Number.isInteger(parseInt(uri_part_id))){
+                    console.log(parseInt(uri_part_id));
+
+                    const id_video_vimeo = parseInt(uri_part_id);
+                    
+
+                    $.ajax({
+                        url: uri_api_create_new_vimeo_by_url,
+                        method: 'POST',
+                        data: {
+                            video_name: 'ciao',//$('#nome').val(),
+                            id_video_vimeo: id_video_vimeo,
+                        },
+                        success: function (response) {
+                            console.log('response', response);
+                            if (response.status == 201) {
+                                if (vimeo_new_video_resp = response.body.vimeo_resonse) {
+                                    $('.form').submit();
+                                }
+                            }
+                        },
+                        error: function () {
+                            alert("error");
+                        }
+                    });
+
+
+
+                    return true;
+                }    
+            }
+            alert('Si è verificato un errore.\nControlla i dati inseriti.');
+        } else {
+            alert('URL video su Vimeo non valida');
+        }
+    });
+
+    function isValidHttpUrl(string) {
+        let url;
+        try {
+            url = new URL(string);
+        } catch (_) {
+            return false;
+        }
+        return url.protocol === "http:" || url.protocol === "https:";
+    }
+    //------------------------------------------------------------
+    //------------------------------------------------------------
+
     $('#call_api_refresh_video_info').bind('click', function (evt) {
         evt.preventDefault();
         const __video_id = $(this).attr('meta-video-code');

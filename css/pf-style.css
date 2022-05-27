@@ -236,6 +236,15 @@ body{ font-family: Helvetica, sans-serif; background: #FFF; line-height: 1.4; fo
 
 		#loading_video_upload_perce_text {color: #FFF;}
 
+		#set_vimeo_by_vimeo_video_url_cnt { display: flex; justify-content: space-between; align-items: center; margin-top: 10px;	}
+		#connessione_in_corso_mess{ display: flex; flex-direction: column; align-items: center; height: 150px; width: 100%;}
+		
+
+		#get_vimeo_video_input_cnt { width: 50%; }
+		#invalid_vimeo_video_file_up{ color: var(--rosso); text-align: center; font-weight: 700;}
+
+
+
 		#upload_on_vimeo_all_form_cnt { display: flex; justify-content: space-between; align-items: center;	}
 		#connessione_in_corso_mess{ display: flex; flex-direction: column; align-items: center; height: 150px; width: 100%;}
 		#upload_on_vimeo_label {
