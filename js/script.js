@@ -72,7 +72,7 @@ function attivaEditors() {
             editors_in_form[conta_editor] = new Jodit('.text_editor_' + conta_editor, {
                 askBeforePasteHTML: false,
                 askBeforePasteFromWord: false,
-                defaultActionOnPaste: "insert_clear_html",
+                defaultActionOnPaste: "insert_only_text",
                 removeButtons: custom_textarea_toolbar_remove,
                 buttonsXS: custom_textarea_xs_toolbar,
                 minHeight: 270,
@@ -95,7 +95,7 @@ function attivaEditors() {
             editors_in_form[conta_editor] = new Jodit('.text_editor_min_' + conta_editor, {
                 askBeforePasteHTML: false,
                 askBeforePasteFromWord: false,
-                defaultActionOnPaste: "insert_clear_html",
+                defaultActionOnPaste: "insert_only_text",
                 buttonsXS: custom_textarea_xs_toolbar,
                 removeButtons: min_textarea_toolbar,
                 minHeight: 210,
