@@ -401,13 +401,13 @@ body{ font-family: Helvetica, sans-serif; background: #FFF; line-height: 1.4; fo
 				.sb_paragraph_in{width: 20%; min-width: 200px;}
 
 		.entity_custom_items_cnt{ padding: 10px 0 5px 0;}
-		.entity_custom_items_cnt .custom_field-row_item{display: grid; align-items: start; grid-template-columns: 25% auto 5%; background-color: #e7e6e6; padding: 0 10px;}
+		.entity_custom_items_cnt .custom_field-row_item{display: grid; align-items: start; grid-template-columns: 25% auto 5%; padding: 0 10px;}
 		.entity_custom_items_cnt .custom_field-row_item .del_trg_cnt{padding: 25px 0 0 10px;}
-		.entity_custom_items_cnt .custom_field-row_item:nth-child(odd){ background-color: #f2f3f7;}
+	/*	.entity_custom_items_cnt .custom_field-row_item:nth-child(odd){ background-color: #f2f3f7;} 
 
-
-
-
+	.entity_custom_items_cnt .custom_field-row_item .form-group{margin: 0;}
+*/
+.entity_custom_items_cnt .custom_field-row_item{padding: 0;}
 
 		.form-field-simple_main_img_id{position: relative;}
 
