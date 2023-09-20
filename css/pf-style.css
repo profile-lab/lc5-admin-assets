@@ -33,6 +33,7 @@ a{ text-decoration: none; color: #000;}
 a:hover{ color: var(--arancione);}
 button{background: transparent; border: none; box-shadow: none;}
 select, input, textarea{border: 1px solid #cacaca; border-radius: 5px; padding: 10px 10px; width: 100%; font-size: 15px; outline: none; font-family: Helvetica, sans-serif; box-sizing: border-box;}
+.disabled{ background-color:#ececec; }
 
 .jodit-container a{color: var(--arancione); text-decoration: underline;}
 

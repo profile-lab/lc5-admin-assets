@@ -5,7 +5,7 @@ $(document).ready(function () {
         e.preventDefault();
         let c_ro_input = $(this).parent().find('input');
         let if_active_name = c_ro_input.attr('if_active_name');
-        c_ro_input.removeAttr('readonly').removeAttr('disabled').attr('name', if_active_name);
+        c_ro_input.removeAttr('readonly').removeAttr('disabled').removeClass('disabled').attr('name', if_active_name);
     });
     $('.nav-link.collapsed').click(function (e) {
         e.preventDefault();
