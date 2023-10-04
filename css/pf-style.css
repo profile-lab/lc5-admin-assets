@@ -940,3 +940,11 @@ body{ font-family: Helvetica, sans-serif; background: #FFF; line-height: 1.4; fo
   .form-switch.active i::before { transform: translate3d(18px, 2px, 0) scale3d(0, 0, 0); }
 
   .form-switch.active i::after { transform: translate3d(22px, 2px, 0); }
+
+
+
+  .input-width-xmin{ max-width: 10%;}
+  .input-width-min{ max-width: 15%;}
+  .input-width-small{ max-width: 20%;}
+  .input-width-medium{ max-width: 30%;}
+  .input-width-half{ max-width: 50%;}
