@@ -118,7 +118,7 @@ body{ font-family: Helvetica, sans-serif; background: #FFF; line-height: 1.4; fo
 	.tab-link:last-child{ border-right: none; }
 
 	.readonly_enabled{width: 88%;}
-	.enable_readonly{cursor: pointer;}
+	.enable_readonly{cursor: pointer; max-width: 10%;}
 	
 
 	.listIndex, .my_table{margin: 20px 0; padding: 10px 30px; border-radius: 10px; background-color: #FFF; width: 100%;}
