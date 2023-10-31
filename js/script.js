@@ -17,7 +17,7 @@ var custom_textarea_toolbar_remove = [
     'symbol', 'video', 'table', 'undo', 'redo', 'print', 'about', 'copyformat', 'cut', 'copy', 'paste',
     'selectall', 'listitem', 'find', 'preview', 'dots', 'superscript', 'subscript', 'classSpan', 'file'
 ];
-var min_textarea_toolbar = custom_textarea_toolbar_remove.concat(['ul', 'paragraph', 'image', 'link', 'eraser', 'align', 'align']);
+var min_textarea_toolbar = custom_textarea_toolbar_remove.concat(['ul', 'paragraph', 'image',  'eraser', 'align', 'align']);
 // 
 $(document).ready(function () {
     attivaEditors();
