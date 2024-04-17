@@ -35,6 +35,6 @@ $(document).ready(function () {
     $('.hamburger').click(function (event) {
         event.preventDefault();
         $('.hamburger-box').toggleClass('is-active');
-        $('.site_navbar').toggleClass('menu-visible');
+        $('header nav').toggleClass('menu-visible');
     });
 });

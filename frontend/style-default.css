@@ -1,31 +1,27 @@
-/* CSS Reset */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+@import url('./reset.css');
+@import url('./root.css');
+@import url('./components.css');
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--primary);
+    background: var(--light);
 }
 
-/* Add your custom styles below this line */
+a {
+    color: var(--secondary);
+    text-decoration: none;
+}
 
-body{ font-family: Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.6; color: #333; background: #f5f5f5; }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: #f5f5f5;
+    background-color: var(--light);
 }
 
 .logo {
@@ -33,31 +29,71 @@ header {
     flex-direction: column;
     align-items: center;
 }
-.logo .site_claim{
+
+.logo .site_claim {
     font-size: .8rem;
     text-transform: uppercase;
     font-weight: 700;
 }
+
 .logo img {
     width: 10rem;
     height: auto;
 }
 
 header nav {
-    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: inherit;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    display: none;
+}
+
+header nav.menu-visible {
+    display: flex;
 }
 
 header nav ul {
     list-style: none;
-    display: flex;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
-header nav ul li {
-    margin-left: 10px;
+.hamburger {
+    display: block;
 }
 
-header nav ul a {
-    text-decoration: none;
-    color: #333;
+@media screen and (min-width: 768px) {
+    .hamburger {
+        display: none;
+    }
+
+    header nav {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 1rem;
+    }
+
+    header nav ul {
+        display: flex;
+    }
+
+    header nav ul li {
+        margin-left: 10px;
+    }
+
+    header nav ul a {
+        text-decoration: none;
+        color: var(--secondary);
+    }
 }
