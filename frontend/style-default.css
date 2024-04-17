@@ -3,11 +3,38 @@
 @import url('./components.css');
 
 body {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
     font-size: 16px;
     line-height: 1.6;
     color: var(--primary);
     background: var(--light);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: var(--primary);
+    text-transform: capitalize;
+    margin: .7em 0 1em 0;
+}
+h1 {
+    font-size: 2.5rem;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.75rem;
+}
+h4 {
+    font-size: 1.5rem;
+}
+h5{
+    font-size: 1.2rem;
+}
+h6{
+    font-size: 1rem;
+    text-transform: uppercase;
 }
 
 a {
@@ -15,25 +42,44 @@ a {
     text-decoration: none;
 }
 
-
+.myIn{
+    width: 96%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem 0;
+    margin: 1rem 0;
+}
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: .75rem 1rem;
     background-color: var(--light);
+    border-bottom: var(--border);
+    z-index: 90;
+
 }
 
 .logo {
+    z-index: 92;
+
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
+.logo a{ line-height: 1; padding: 0; margin: 0;}
 .logo .site_claim {
-    font-size: .8rem;
+    font-size: .55rem;
     text-transform: uppercase;
     font-weight: 700;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
 }
 
 .logo img {
@@ -42,6 +88,7 @@ header {
 }
 
 header nav {
+    z-index: 91;
     position: absolute;
     top: 0;
     left: 0;
@@ -60,6 +107,7 @@ header nav.menu-visible {
 }
 
 header nav ul {
+    font-size: 1.3rem;
     list-style: none;
     text-align: center;
     text-transform: uppercase;
@@ -67,12 +115,16 @@ header nav ul {
 }
 
 .hamburger {
+    z-index: 95;
     display: block;
 }
 
 @media screen and (min-width: 768px) {
     .hamburger {
         display: none;
+    }
+    .logo .site_claim {
+        font-size: .75rem;
     }
 
     header nav {
@@ -85,11 +137,13 @@ header nav ul {
     }
 
     header nav ul {
+        font-size: .75rem;
+
         display: flex;
     }
 
     header nav ul li {
-        margin-left: 10px;
+        margin-left: 1rem;
     }
 
     header nav ul a {
