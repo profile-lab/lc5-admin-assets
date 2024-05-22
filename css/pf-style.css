@@ -124,7 +124,7 @@ body{ font-family: Helvetica, sans-serif; background: #FFF; line-height: 1.4; fo
 
 	.listIndex, .my_table{margin: 20px 0; padding: 10px 30px; border-radius: 10px; background-color: #FFF; width: 100%;}
 
-	.list_item_row{display: flex; align-items: center; flex-direction: row; flex-wrap: nowrap; padding: 1em .5em; border-bottom: #e5e5e5 1px solid;}
+	.list_item_row{display: flex; align-items: center; flex-direction: row; flex-wrap: nowrap; padding: 1em .5em; border-bottom: #e5e5e5 1px solid; gap: 1em;	}
 	
 		.list_item_tools{margin-left: auto; display: flex; align-items: center;}
 
