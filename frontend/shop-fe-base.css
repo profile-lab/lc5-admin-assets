@@ -437,30 +437,31 @@ h5.lcshop-detail-tech-txt-label {
 }
 
 .cart-page-totals {
-    width: 100%;
     display: flex;
-    padding: 1em 0;
+    width: 100%;
     justify-content: flex-end;
+    padding: 1em 0;
+}
+.lcshop-cart-totals {
+    width: auto;
+    padding: 0;
+    display: block;
+    max-width: 400px;
 }
 
-.cart-page-totals-rows {
+.lcshop-totals-row {
     font-size: .8em;
     max-width: 400px;
     display: block;
-}
-
-.cart-page-totals-row {
     display: grid;
     grid-template-columns: 10fr 5fr;
     padding: .1em 0;
     border: none;
-}
-
-.cart-page-totals-rows {
     text-align: right;
 }
 
-.cart-page-totals-row-totale {
+
+.lcshop-totals-row-totale {
     font-size: 1.3em;
     font-weight: 700;
     text-align: right;
@@ -800,9 +801,10 @@ input[type=number] {
         grid-template-columns: 1fr;
         gap: 1.5em;
     }
-    .cart-page-totals-rows {
-     width: 100%;
-     max-width: 100%;
-     padding: 1em 0;
-    }
+
+    /* .cart-page-totals-rows {
+        width: 100%;
+        max-width: 100%;
+        padding: 1em 0;
+    } */
 }
