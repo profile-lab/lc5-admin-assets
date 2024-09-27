@@ -18,11 +18,13 @@
     overflow-x: hidden;
     padding: 0 0 1em 0;
 }
+
 .lcshop-header h1 {
     font-weight: 700;
     margin: 0 0 .3em 0;
     line-height: 1;
 }
+
 .lcshop-header p {
     font-size: .9em;
     margin: 0;
@@ -145,9 +147,10 @@ ul.lcshop-category-list li a.is_current {
 .lcshop-listing {
     display: grid;
     grid-template-columns: 32% 32% 32%;
-    gap: 2%;
+    gap: 1em 2%;
     width: 75%;
 }
+
 .lcshop-card {
     padding: 1em 1em .3em 1em;
     border: var(--border);
@@ -158,6 +161,7 @@ ul.lcshop-category-list li a.is_current {
     flex-direction: column;
     justify-content: space-between;
 }
+
 .lcshop-card form {
     width: 100%;
     height: 100%;
@@ -167,25 +171,29 @@ ul.lcshop-category-list li a.is_current {
     margin: 0;
     padding: 0;
 }
-.lcshop-card form .sel_prod_model_id{
+
+.lcshop-card form .sel_prod_model_id {
     max-width: 100%;
     width: 100%;
     box-sizing: border-box;
     padding: .3em;
 }
-.lcshop-card img{
+
+.lcshop-card img {
     padding: 0;
     margin: 0 0 1em 0;
     display: block;
     line-height: 1;
     border: var(--border);
 }
-.lcshop-card .lcshop-card_dettagli-txts h5{
+
+.lcshop-card .lcshop-card_dettagli-txts h5 {
     font-size: .9em;
     text-align: center;
-    
+
 }
-.lcshop-card .shop_product_prices{
+
+.lcshop-card .shop_product_prices {
     padding: .1em 0 .8em 0;
 }
 
@@ -202,32 +210,62 @@ ul.lcshop-category-list li a.is_current {
     width: 100%;
     display: grid;
     grid-template-columns: 42% 55%;
-    gap: 3%;
+    gap: 1em 3%;
 }
 
-.lcshop-varianti-tit{ padding: 0; margin: 0;}
-    .lcshop-varianti-cnt{
-        position: relative; padding: 0; margin: .5em 0; max-width: 20em;
-    }
-    .lcshop-varianti-current{
-        background-color: var(--alternative); border-radius: .4em;
-        font-size: 1em; padding: .5em; margin: 0; line-height: 1; color: var(--rosso);
-    }
-    ul.lcshop-varianti-list{
-        list-style: none;
-        position: absolute; top: 100%; left: 0; right: 0;
-        background-color: var(--bg-lighter); border-radius: .4em;
-        display: none;
-    }
-    .lcshop-varianti-cnt:hover ul.lcshop-varianti-list{
-        display: block;
-        box-shadow: 1px 1px 5px var(--primary);
+.lcshop-varianti-tit {
+    padding: 0;
+    margin: 0;
+}
 
-    }
-    ul.lcshop-varianti-list li{
-        font-size: .9em; padding: .5em; margin: 0; line-height: 1;
-    }
-    ul.lcshop-varianti-list li.current a{ color: var(--rosso);}
+.lcshop-varianti-cnt {
+    position: relative;
+    padding: 0;
+    margin: .5em 0;
+    max-width: 20em;
+}
+
+.lcshop-varianti-current {
+    background-color: var(--alternative);
+    border-radius: .4em;
+    font-size: 1em;
+    padding: .5em;
+    margin: 0;
+    line-height: 1;
+    color: var(--rosso);
+}
+
+ul.lcshop-varianti-list {
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--bg-lighter);
+    border-radius: .4em;
+    display: none;
+}
+
+.lcshop-varianti-cnt:hover ul.lcshop-varianti-list {
+    display: block;
+    box-shadow: 1px 1px 5px var(--primary);
+
+}
+
+ul.lcshop-varianti-list li {
+    font-size: .9em;
+    padding: .5em;
+    margin: 0;
+    line-height: 1;
+}
+
+ul.lcshop-varianti-list li.current a {
+    color: var(--rosso);
+}
+
+.shop_product_scheda_dettagli_price .price {
+    text-align: left;
+}
 
 .lcshop-breadcrumb {
     display: block;
@@ -259,20 +297,50 @@ ul.lcshop-category-list li a.is_current {
 
 .lcshop-breadcrumb ul li a {}
 
-.lcshop-cart-icon-cnt{position: relative; display: flex; align-items: center; }
-.lcshop-cart-icon-cnt a{display: flex; align-items: center; padding: 5px 15px; position: relative; width: 60px; padding-right: 20px;}
-   .lcshop-cart-icon-cnt .cart-icon-count{ position: absolute; top: -5px; right: -5px; background: var(--primary); color: var(--alternative); padding: 5px; border-radius: 50%; font-size: 9px; font-weight: 700; height: 20px; width: 20px; display: flex; align-items: center; justify-content: center; }
-    
+.lcshop-cart-icon-cnt {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.lcshop-cart-icon-cnt a {
+    display: flex;
+    align-items: center;
+    padding: 5px 15px;
+    position: relative;
+    width: 60px;
+    padding-right: 20px;
+}
+
+.lcshop-cart-icon-cnt .cart-icon-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: var(--primary);
+    color: var(--alternative);
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 9px;
+    font-weight: 700;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 .lcshop-detail-medias {
     width: auto;
     max-width: 100%;
     /* width: 45%; */
 }
-.lcshop-detail-medias .swiper-wrapper{
+
+.lcshop-detail-medias .swiper-wrapper {
     align-items: center;
 }
-.lcshop-detail-medias img{
+
+.lcshop-detail-medias img {
     max-width: 100%;
     width: auto;
     display: block;
@@ -288,15 +356,17 @@ ul.lcshop-category-list li a.is_current {
     max-width: 100%;
     /* width: 55%; */
 }
-h5.lcshop-detail-tech-txt-label{
+
+h5.lcshop-detail-tech-txt-label {
     font-size: 1rem;
     font-weight: 700;
     text-transform: uppercase;
     margin: 1em 0;
 }
+
 .lcshop-detail-tech-txt-txt {
     font-size: .9rem;
-    
+
 }
 
 .shop_content_detail_media_cnt {
@@ -325,7 +395,10 @@ h5.lcshop-detail-tech-txt-label{
 
 .cart-page-rows {
     font-size: .8em;
+    border-bottom: var(--border);
+
 }
+
 .cart-page-row {
     display: grid;
     grid-template-columns: 50% 15% 15% 15% 5%;
@@ -333,19 +406,30 @@ h5.lcshop-detail-tech-txt-label{
     align-items: center;
     text-align: center;
 }
+
+.cart-page-row.cart-page-row-header {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: .8em;
+    border-bottom: var(--border);
+}
+
 .cart-page-col-name {
     text-align: left;
     padding-right: 2em;
 }
+
 .cart-page-col-action {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.cart-page-name{
+
+.cart-page-name {
     font-size: 1.3em;
     text-align: left;
 }
+
 .cart-page-fullname {
     font-size: .9em;
     font-weight: 300;
@@ -358,6 +442,7 @@ h5.lcshop-detail-tech-txt-label{
     padding: 1em 0;
     justify-content: flex-end;
 }
+
 .cart-page-totals-rows {
     font-size: .8em;
     max-width: 400px;
@@ -374,11 +459,14 @@ h5.lcshop-detail-tech-txt-label{
 .cart-page-totals-rows {
     text-align: right;
 }
+
 .cart-page-totals-row-totale {
     font-size: 1.3em;
     font-weight: 700;
     text-align: right;
-    padding-top: 1em;
+    padding-top: .5em;
+    margin-top: .5em;
+    border-top: var(--border);
 }
 
 
@@ -504,6 +592,13 @@ input[type=number] {
 
 .agg_cart_cnt.available {
     display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.lcshop-card .agg_cart_cnt.available {
+    justify-content: space-between;
 }
 
 .product_giac_mess {
@@ -565,12 +660,13 @@ input[type=number] {
         padding: 0;
     }
 
-    .lcshop-breadcrumb{
+    .lcshop-breadcrumb {
         font-size: .8em;
         text-align: center;
         display: flex;
         justify-content: center;
     }
+
     .lcshop-flex {
         display: flex;
         flex-direction: column;
@@ -664,11 +760,35 @@ input[type=number] {
         grid-template-columns: 100%;
         gap: 1em
     }
+
     .lcshop-detail-tech-txt-txt {
         font-size: .8rem;
     }
 
-    
+
+
+    .cart-page-row {
+        display: grid;
+        grid-template-columns: 30% 30% 30% 10%;
+        /* padding: .5em 0;
+        align-items: center;
+        text-align: center; */
+    }
+
+    .cart-page-row div:first-child {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        padding-bottom: .5em;
+        /* grid-row-start: 1;
+        grid-row-end: 3; */
+    }
+
+    .cart-page-row.cart-page-row-header {
+        display: none;
+    }
+
+
+
 
 }
 
@@ -679,5 +799,10 @@ input[type=number] {
         display: grid;
         grid-template-columns: 1fr;
         gap: 1.5em;
+    }
+    .cart-page-totals-rows {
+     width: 100%;
+     max-width: 100%;
+     padding: 1em 0;
     }
 }
