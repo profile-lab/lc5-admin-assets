@@ -16,7 +16,7 @@
 .lcshop-header {
     width: 100%;
     overflow-x: hidden;
-    padding: 0 0 1em 0;
+    padding: 0 0 .5em 0;
 }
 
 .lcshop-header h1 {
@@ -69,22 +69,10 @@
 }
 
 
-a.lcshop-cart-action,
-.shop-action-tools-action {
+a.lcshop-button, button.lcshop-button, .button.lcshop-button {
     font-size: 16px;
-    display: inline-block;
-    padding: .5em .8em;
-    background-color: var(--primary);
-    color: var(--link-ondark-color);
-
-    border-radius: .5em;
-    margin: .5em 0;
 }
-
-a.lcshop-cart-action:hover,
-.shop-action-tools-action:hover {
-    /* background-color: var(--link-hover); */
-    /* color: var(--link-hover); */
+a.lcshop-button:hover, button.lcshop-button:hover, .button.lcshop-button:hover {
     color: var(--link-ondark-hover);
 
 }
@@ -646,12 +634,14 @@ input[type=number] {
     justify-content: flex-start;
 }
 
+button.cart_in,
 .cart_in {
     background: var(--primary);
     border: none;
     border-radius: 5px;
-    height: 40px;
+    /* height: 40px; */
     cursor: pointer;
+    padding: .1em .5em;
 }
 
 .cart_in svg {
@@ -672,9 +662,10 @@ input[type=number] {
 }
 
 .qty button {
-    width: 40px;
+    width: auto;
     height: auto;
-    padding: 7px !important;
+    padding: .5em .7em !important;
+    display: inline-block;
 }
 
 

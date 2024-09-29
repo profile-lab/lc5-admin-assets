@@ -1,3 +1,69 @@
 .lcusers{
     box-sizing: border-box;
 }
+
+.lcusers-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2em;
+}
+
+
+.lcusers-header {
+    width: 100%;
+    overflow-x: hidden;
+    padding: 0 0 .5em 0;
+}
+
+.lcusers-header h1 {
+    font-weight: 700;
+    margin: 0 0 .3em 0;
+    line-height: 1;
+}
+
+.lcusers-header p {
+    font-size: .9em;
+    margin: 0;
+    padding: 0;
+}
+
+.lcusers-sidebar {
+    width: 25%;
+}
+
+.lcusers-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em 0;
+    margin: 0 auto;
+}
+
+.lcusers-signup-form-cnt, .lcusers-login-form-cnt, .lcusers-profile-form-cnt {
+    width: 100%;
+    max-width: 450px;
+}
+.lcusers-profile-form-cnt {
+    max-width: 650px;
+}
+.lcuser-altenative{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    background-color: var(--primary);
+    color: var(--alternative);
+    padding: 1em;
+    border-radius: 1em;
+    margin: 1em 0;
+    max-width: 450px;
+    min-width: 300px;
+}
+.lcuser-altenative *{ color: var(--alternative);}
+.lcuser-altenative .lcuser-altenative_btn{ 
+    background-color: var(--alternative); color: var(--primary); padding: .5em .8em; margin-bottom: .5em; display: inline-block;  border-radius: .6em; 
+    text-transform: uppercase; font-weight: 700; cursor: pointer; text-decoration: none;
+}
+.lcuser-altenative .lcuser-altenative_btn:hover{ opacity: .8; }
