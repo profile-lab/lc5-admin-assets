@@ -67,3 +67,114 @@
     text-transform: uppercase; font-weight: 700; cursor: pointer; text-decoration: none;
 }
 .lcuser-altenative .lcuser-altenative_btn:hover{ opacity: .8; }
+
+.lcuser-icon-cnt {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.lcuser-icon-cnt a {
+    display: flex;
+    align-items: center;
+    padding: 5px 15px;
+    position: relative;
+    width: 60px;
+    padding-right: 20px;
+}
+
+.lcuser-sidebar{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+
+
+
+.lcuser-sidebar-menu-cnt-header {
+    display: none;
+}
+
+.lcshop-sidebar-tit-link {
+    display: none;
+}
+
+
+
+.lcshop-sidebar-tit-show-minicart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lcshop-sidebar-tit-show-minicart .ico-accordion {
+    transform: rotateX(180deg);
+}
+
+.mobile-show .lcshop-sidebar-tit-show-minicart .ico-accordion {
+    transform: rotateX(0deg);
+}
+
+
+
+.lcshop-category-list-cnt .lcshop-sidebar-tit {
+    /* display: none; */
+    font-size: .7em;
+}
+
+ul.lcshop-category-list {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-y: auto;
+    margin: 0;
+    padding: .5em 2em .8em 0;
+    border-bottom: 1px solid var(--secondary);
+}
+
+ul.lcshop-category-list li {
+    padding: 0 .5em 0 0;
+    white-space: nowrap;
+}
+
+ul.lcshop-category-list li a {
+    background-color: var(--bg-lighter);
+    padding: .2em .6em;
+    border-radius: .2em;
+}
+
+ul.lcshop-category-list::-webkit-scrollbar {
+    display: none;
+}
+
+ul.lcshop-category-list {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .lcuser-sidebar-menu-cnt-header {
+        display: block;
+        background-color: var(--alternative);
+        padding: .5em 1em;
+    }
+    .lcuser-sidebar-menu-cnt-data {
+        display: none;
+        padding: .2em 1em;
+    }
+    .mobile-show .lcuser-sidebar-menu-cnt-data {
+        display: block;
+    }
+
+}
+@media screen and (max-width: 767px) {
+    .mobile-show .lcshop-sidebar-tit-show-minicart .ico-accordion {
+        transform: rotateX(0deg);
+    }
+    
+
+}
