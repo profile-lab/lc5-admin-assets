@@ -160,7 +160,10 @@ ul.lcshop-category-list li a.is_current {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    text-align: left;
+    font-size: 16px;
 }
+
 
 .lcshop-card form {
     width: 100%;
@@ -187,15 +190,35 @@ ul.lcshop-category-list li a.is_current {
     border: var(--border);
 }
 
-.lcshop-card .lcshop-card_dettagli-txts h5 {
+.lcshop-card .lcshop-card-dettagli-txts h5 {
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0 0 .3em 0;
+}
+.lcshop-card-dettagli-nodello {
     font-size: .9em;
-    text-align: center;
-
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+}
+.lcshop-card-infos{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: .5em 0;
 }
 
-.lcshop-card .shop_product_prices {
+.lcshop-card .lcshop-prices {
     padding: .1em 0 .8em 0;
+
 }
+
+.lcshop-pager{ display: block; padding: 3em 0; font-size: .8em;}
+.lcshop-pager ul.pagination{ display:flex; list-style:none; justify-content:center; align-items:center; gap: 1em;}
+.lcshop-pager ul.pagination li{ padding: 0 .1em;}
+.lcshop-pager ul.pagination li a{  display: inline-block; padding: .3em; min-width: 2em; min-height: 2em; background-color: var(--bg-lighter); color: var(--link-color); border-radius: .6em; text-align: center; }
+.lcshop-pager ul.pagination li a:hover{  background-color: var(--bg-lighter); color: var(--link-hover); }
+.lcshop-pager ul.pagination li.active a{  background-color: var(--link-hover); color: var(--light); }
 
 
 
