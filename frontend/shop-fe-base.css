@@ -276,6 +276,7 @@ ul.lcshop-varianti-list li.current a {
 
 .shop_product_scheda_dettagli_price .price {
     text-align: left;
+    font-size: 1.4em;
 }
 
 .lcshop-breadcrumb {
@@ -377,7 +378,11 @@ h5.lcshop-detail-tech-txt-label {
 
 .lcshop-detail-tech-txt-txt {
     font-size: .9rem;
-
+    
+}
+.lcshop-detail-tech-txt-txt p{
+    line-height: 1.2;
+    padding: 0 0 .5em 0;
 }
 
 .shop_content_detail_media_cnt {
