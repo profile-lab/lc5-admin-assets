@@ -247,9 +247,22 @@ ul.lcshop-category-list li a.is_current {
 }
 .lcshop-varianti-current, .lcshop-varianti-list-item{
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 5fr .6fr;
     align-items: center;
     gap: 1em;
+}
+
+.lcshop-varianti-open-sub{
+    position: relative;
+    height: 2em;
+}
+.lcshop-varianti-cnt .ico-accordion {
+    position: absolute;
+    transform: rotateX(180deg);
+}
+
+.lcshop-varianti-cnt:hover .ico-accordion {
+    transform: rotateX(0deg);
 }
 
 .lcshop-varianti-img, .lcshop-varianti-list-item-img{
