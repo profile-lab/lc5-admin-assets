@@ -77,13 +77,13 @@
 .lcuser-icon-cnt a {
     display: flex;
     align-items: center;
-    padding: 5px 15px;
+    padding: 5px 5px;
     position: relative;
-    width: 60px;
-    padding-right: 20px;
+    width: 40px;
 }
 .lcuser-icon-cnt a svg {
-    width: 37px;
+    width: 40px;
+    padding: 0;
 }
 
 .lcuser-sidebar{
