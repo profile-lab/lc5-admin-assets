@@ -243,7 +243,7 @@ ul.lcshop-category-list li a.is_current {
     padding: .5em;
     margin: 0;
     line-height: 1;
-    color: var(--rosso);
+    color: var(--primary);
 }
 .lcshop-varianti-current, .lcshop-varianti-list-item{
     display: grid;
