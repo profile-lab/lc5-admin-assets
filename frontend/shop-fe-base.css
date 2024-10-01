@@ -323,6 +323,10 @@ ul.lcshop-varianti-list li.current a {
     width: 60px;
     padding-right: 20px;
 }
+.lcshop-cart-icon-cnt a svg {
+    width: 37px;
+    padding: 0;
+}
 
 .lcshop-cart-icon-cnt .cart-icon-count {
     position: absolute;

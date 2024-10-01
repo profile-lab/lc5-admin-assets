@@ -82,6 +82,9 @@
     width: 60px;
     padding-right: 20px;
 }
+.lcuser-icon-cnt a svg {
+    width: 37px;
+}
 
 .lcuser-sidebar{
     width: 25%;
