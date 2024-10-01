@@ -245,6 +245,19 @@ ul.lcshop-category-list li a.is_current {
     line-height: 1;
     color: var(--rosso);
 }
+.lcshop-varianti-current, .lcshop-varianti-list-item{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
+    gap: 1em;
+}
+
+.lcshop-varianti-img, .lcshop-varianti-list-item-img{
+    width: 3em;
+}
+.lcshop-varianti-name, .lcshop-varianti-list-item-name{
+    font-size: .9em;
+}
 
 ul.lcshop-varianti-list {
     list-style: none;
