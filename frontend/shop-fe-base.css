@@ -31,8 +31,9 @@
     padding: 0;
 }
 
-.lcshop-sidebar {
+.lcshop-sidebar, .lcshop-riepilogo-sidebar {
     width: 25%;
+    padding-bottom: 1em;
 }
 
 .lcshop-sidebar-tit-link,
@@ -507,6 +508,13 @@ h5.lcshop-detail-tech-txt-label {
     display: flex;
     justify-content: space-between;
     padding: 10px 0;
+    gap: 1em;
+}
+.shop-action-tools-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
 }
 
 .cart-page-col.cart-page-col-qnt {
@@ -710,8 +718,17 @@ button.cart_in,
         align-items: flex-start;
     }
 
-    .lcshop-sidebar {
+    .lcshop-sidebar, .lcshop-riepilogo-sidebar {
         width: 100%;
+    }
+    .lcshop-cart-totals {
+        width: 100%;
+        padding: 0;
+        display: block;
+        max-width: 100%;
+    }
+    .lcshop-totals-row{
+        max-width: 100%;
     }
 
     .lcshop-minicart-cnt-header {
