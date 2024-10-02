@@ -40,12 +40,14 @@
     margin: 0 auto;
 }
 
-.lcusers-signup-form-cnt, .lcusers-login-form-cnt, .lcusers-profile-form-cnt {
+.lcusers-signup-form-cnt, .lcusers-login-form-cnt {
     width: 100%;
     max-width: 450px;
 }
 .lcusers-profile-form-cnt {
-    max-width: 650px;
+    display: block;
+    padding: 0 0 1em 0;
+    width: 74%;
 }
 .lcuser-altenative{
     display: flex;
@@ -100,22 +102,195 @@
     display: none;
 }
 
+.lcuser_orders_list{
+    width: 100%;
+    overflow-y: auto;
+}
+.lcuser_orders_list_rows {
+    display: block;
+    width: 100%;
+    min-width: 600px;
+}
+.lcuser_orders_list_row{
+    display: grid;
+    grid-template-columns: 3fr 1fr 2fr 1fr 1fr;
 
+    align-items: center;
+    padding: .5em 0;
+    border-bottom: 1px solid var(--alternative);
+}
+
+.lcuser_order_items_list{
+    width: 100%;
+    overflow-y: auto;
+}
+.lcuser_order_items_list_rows {
+    display: block;
+    width: 100%;
+    min-width: 600px;
+}
+.lcuser_order_items_list_row{
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr ;
+    align-items: center;
+    padding: .5em 0;
+    border-bottom: 1px solid var(--alternative);
+}
+
+
+.lcuser_order {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: stretch;
+    align-items: center;
+    padding: .5rem 0 2rem 0;
+}
+
+.lcuser_order_totali {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: stretch;
+    align-items: center;
+    padding: .5rem 0 2rem 0;
+}
+
+.lcuser_order_row {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: .3rem 0;
+    margin: 0 1rem 1rem 0;
+    border-bottom: var(--alternative) 1px solid;
+}
+.lcuser_order_dati{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    padding: 1em 0;
+    align-items: stretch;
+}
+.lcuser_order_dati_block{
+    /* border-bottom: var(--alternative) 1px solid; */
+    margin: 0 0 1rem 0;
+
+}
+
+.lcuser_order_row_full {
+    display: block;
+}
+
+.lcuser_order_label {
+    width: 50%;
+}
+
+.lcuser_order_value {
+    width: 50%;
+    font-weight: bold;
+
+}
+
+.orders_list_table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.orders_list_table tr th {
+    background: #F5f5f5;
+    border-left: 1px solid #FFF;
+    padding: .3rem .5rem;
+}
+
+.orders_list_table tr td {
+    background: #FFF;
+    border-left: 1px solid #FFF;
+    padding: .3rem .5rem;
+    border-bottom: 1px solid #f5f5f5;
+}
 
 
 
 @media screen and (max-width: 1024px) {
+    .lcusers-flex {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 2em;
+    }
+    .lcusers-signup-form-cnt, .lcusers-login-form-cnt {
+        width: 100%;
+        max-width: 100%;
+    }
+    .lcusers-profile-form-cnt {
+        width: 100%;
+    }
+    .lcuser-sidebar {
+        display: block;
+        border-bottom: 1px solid var(--alternative);
+        width: 100%;
+    }
     .lcuser-sidebar-menu-cnt-header {
         display: block;
-        background-color: var(--alternative);
-        padding: .5em 1em;
+        padding: .5em 0;
+    }
+    .lcuser-sidebar-menu-cnt-header a{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.2em;
+        font-weight: 700;
+    }
+    .lcuser-sidebar-menu-cnt-header a svg{
+        transform: rotate(180deg);
+    }
+    .mobile-show .lcuser-sidebar-menu-cnt-header a svg{
+        transform: rotate(0deg);
+
     }
     .lcuser-sidebar-menu-cnt-data {
         display: none;
-        padding: .2em 1em;
+        padding: .2em 0;
     }
     .mobile-show .lcuser-sidebar-menu-cnt-data {
         display: block;
+    }
+    .lcuser-sidebar-menu-cnt-data h6{ display: none;}
+
+    .lcuser-sidebar-menu-nav{
+        display: block;
+        padding: 0 0 .5em 0;
+        overflow-y: auto;
+
+    }
+    
+    ul.lcuser-sidebar-menu{
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+        padding: 0;
+    }
+    ul.lcuser-sidebar-menu li{
+        padding-bottom: 1em;
+    }
+    ul.lcuser-sidebar-menu li a{
+        padding: .51em .7em;
+        background-color: var(--alternative);
+        color: var(--primary);
+    }
+
+    .lcuser_order {
+        grid-template-columns: 1fr;
+        padding: .5rem 0 0 0;
+    }
+
+    .lcuser_order_row{
+        padding: .3rem 0;
+        margin: 0 0;
+    }
+
+    .lcuser_order_dati{
+        grid-template-columns: 1fr;
+        gap: 0;
     }
 
 }
