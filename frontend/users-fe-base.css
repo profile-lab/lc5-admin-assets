@@ -268,6 +268,7 @@
         flex-direction: row;
         gap: 1em;
         padding: 0;
+        list-style: none;
     }
     ul.lcuser-sidebar-menu li{
         padding-bottom: 1em;
