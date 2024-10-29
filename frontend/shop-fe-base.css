@@ -139,6 +139,13 @@ ul.lcshop-category-list li a.is_current {
     gap: 1em 2%;
     width: 75%;
 }
+.lcshop-no-products {
+    display: block;
+    padding: 1em 0;
+    text-align: center;
+    font-size: 1.2em;
+    width: 100%;
+}
 
 .lcshop-card {
     padding: 1em 1em .3em 1em;
@@ -340,6 +347,28 @@ ul.lcshop-varianti-list li.current a {
     padding: 0;
 }
 
+
+.lcshop-searchbar-cnt {
+    display: block;
+    padding: 0 0;
+    margin: 0 0 1em 0;
+    border-bottom: var(--border);
+
+}
+.lcshop-searchbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 1em 0;
+    gap: 1em;
+}
+.lcshop-searchbar input{
+    width: 100%;
+    padding: .5em;
+    font-size: 1em;
+    border: var(--border);
+    border-radius: .5em;
+}
 
 .lcshop-cart-icon-cnt {
     position: relative;
