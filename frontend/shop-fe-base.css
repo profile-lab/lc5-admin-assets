@@ -203,10 +203,23 @@ ul.lcshop-category-list li a.is_current {
     align-items: flex-start;
     padding: .5em 0;
 }
-
+.price_coin{ white-space: nowrap;  }
 .lcshop-card .lcshop-prices {
     padding: .1em 0 .8em 0;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.lcshop-card .lcshop-prices .price_promo {
+    color: #CC0000;
+    font-size: .95em;
+    font-weight: 700;
+}
+.lcshop-card .lcshop-prices .price_nosale {
+    opacity: .7;
+    text-decoration: line-through;
+    font-size: .71em;
 }
 
 .lcshop-pager{ display: block; padding: 3em 0; font-size: .8em;}
@@ -235,6 +248,13 @@ ul.lcshop-category-list li a.is_current {
 .lcshop-varianti-tit {
     padding: 0;
     margin: 0;
+}
+
+a.lcshop-scheda-category-link{
+    font-size: 1.5em;
+}
+.lcshop-scheda-dati{
+    font-size: 1.5em;
 }
 
 .lcshop-varianti-cnt {
@@ -307,18 +327,39 @@ ul.lcshop-varianti-list li {
 ul.lcshop-varianti-list li.current a {
     color: var(--rosso);
 }
+.shop_content_detail_tools form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
 
+.shop_product_scheda_dettagli_price{
+    width: auto;
+    padding: 1em 0 .8em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
 .shop_product_scheda_dettagli_price .price {
     text-align: left;
     font-size: 1.4em;
+    /* padding-top: 1em; */
 }
+.shop_product_scheda_dettagli_price .price.price_promo {
+    color: #CC0000;
+    /* font-size: .95em; */
+    font-weight: 700;
+}
+.shop_product_scheda_dettagli_price .price.price_promo::before { content: "Promo: "; font-size: .71em; }
 .shop_product_scheda_dettagli_price .price.price_nosale {
     font-size: .9em;
     text-decoration: line-through;
 }
-.shop_product_scheda_dettagli_price .price.price_nosale::before {
-    content: 'Listino: ';
-}
+
 .lcshop-breadcrumb {
     display: block;
     padding: .5em 0 0 0;
@@ -738,6 +779,18 @@ button.cart_in,
     padding: .5em .7em !important;
     display: inline-block;
 }
+
+.prodotto_esaurito_detail {
+    width: 100%;
+    text-align: center;
+    padding: 1em 0;
+    font-size: 1.2em;
+    opacity: .7;
+    text-transform: uppercase;
+    font-size: .71em;
+    font-weight: 700;
+}
+
 
 
 
