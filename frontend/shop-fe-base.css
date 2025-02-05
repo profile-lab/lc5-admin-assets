@@ -183,7 +183,7 @@ ul.lcshop-category-list li a.is_current {
     margin: 0 0 1em 0;
     display: block;
     line-height: 1;
-    border: var(--border);
+    /* border: var(--border); */
 }
 
 .lcshop-card .lcshop-card-dettagli-txts h5 {
