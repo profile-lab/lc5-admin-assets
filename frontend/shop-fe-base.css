@@ -158,8 +158,33 @@ ul.lcshop-category-list li a.is_current {
     justify-content: space-between;
     text-align: left;
     font-size: 16px;
+    position: relative;
 }
 
+.lcshop-card.is_in_promo::before{
+    content: "Promo";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--primary);
+    color: var(--light);
+    padding: .2em .5em;
+    border-radius: 0 0 5px 0;
+    font-size: .8em;
+    font-weight: 700;
+}
+.lcshop-card.is_evi_new::after{
+    content: "Nuovo";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--primary);
+    color: var(--light);
+    padding: .2em .5em;
+    border-radius: 0 0 0 5px;
+    font-size: .8em;
+    font-weight: 700;
+}
 
 .lcshop-card form {
     width: 100%;
