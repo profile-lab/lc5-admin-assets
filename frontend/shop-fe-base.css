@@ -257,11 +257,44 @@ ul.lcshop-category-list li a.is_current {
 
 
 /* --- DETAIL  ---- */
+.lc-shop-scheda-prodotto{
+    position: relative;
+}
+.lc-shop-scheda-prodotto.is_in_promo h1{
+    position: relative;
+    display: flex;
+    vertical-align: middle;
+}
+.lc-shop-scheda-prodotto.is_in_promo h1::after{
+    content: "Promo";
+    background-color: var(--primary);
+    color: var(--light);
+    padding: .3em .3em .1em .3em;
+    border-radius: 5px;
+    font-size: .61em;
+    font-weight: 700;
+    margin: 0 1em;
+}
+
+
 .lcshop-scheda {
     display: block;
     padding: 1em 0;
     width: 100%;
 }
+
+.lcshop-detail-tools form {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1em;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
 
 .lcshop-detail {
     width: 100%;
