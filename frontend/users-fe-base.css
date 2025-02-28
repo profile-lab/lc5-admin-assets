@@ -39,7 +39,10 @@
     padding: 1em 0;
     margin: 0 auto;
 }
-.user-required{
+/* .lcusers-signup-form-cnt,  */
+/* .lcusers-login-form-cnt, */
+.user-required,
+.lcusers-login-or-signup-cnt {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -51,12 +54,13 @@
     max-width: 500px;
 }
 
+
 .lcuser-blocco-info{ display: block; clear: both;}
 
-.lcusers-signup-form-cnt, .lcusers-login-form-cnt {
+/* .lcusers-signup-form-cnt, .lcusers-login-form-cnt {
     width: 100%;
     max-width: 450px;
-}
+} */
 .lcusers-profile-form-cnt {
     display: block;
     padding: 0 0 1em 0;
