@@ -186,6 +186,23 @@ ul.lcshop-category-list li a.is_current {
     font-weight: 700;
 }
 
+.lcshop-card.prod-unavailable{
+    opacity: .5;
+}
+.lcshop-card.prod-unavailable a::after{
+    content: "Terminato";
+    position: absolute;
+    top: 90%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    background-color: var(--primary);
+    color: var(--light);
+    padding: .2em .5em;
+    border-radius: 5px;
+    font-size: .8em;
+    font-weight: 700;
+}
+
 .lcshop-card form {
     width: 100%;
     height: 100%;
