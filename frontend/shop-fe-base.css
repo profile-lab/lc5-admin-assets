@@ -298,6 +298,10 @@ ul.lcshop-category-list li a.is_current {
     display: block;
     padding: 1em 0;
     width: 100%;
+    font-size: 1.1rem;
+}
+.lcshop-content{
+    font-size: 1em;
 }
 
 .lcshop-detail-tools form {
@@ -372,7 +376,7 @@ a.lcshop-scheda-category-link{
     width: 3em;
 }
 .lcshop-varianti-name, .lcshop-varianti-list-item-name{
-    font-size: .9em;
+    font-size: 1em;
 }
 
 ul.lcshop-varianti-list {
@@ -421,7 +425,7 @@ ul.lcshop-varianti-list li.current a {
 }
 .shop_product_scheda_dettagli_price .price {
     text-align: left;
-    font-size: 1.4em;
+    font-size: 1.5em;
     /* padding-top: 1em; */
 }
 .shop_product_scheda_dettagli_price .price.price_promo {
@@ -556,13 +560,31 @@ h5.lcshop-detail-tech-txt-label {
     margin: 1em 0;
 }
 
+.lcshop-detail-tech-txt {
+    font-size: 1em;
+}
 .lcshop-detail-tech-txt-txt {
-    font-size: .9rem;
-    
+    font-size: .95em;
+    line-height: 1.2;
 }
 .lcshop-detail-tech-txt-txt p{
+    padding: 0 0 .5em 0;
+    font-size: inherit;
+    line-height: inherit;
+}
+.lcshop-detail-tech-txt-txt ul{
+    padding: .3em 0;
+    font-size: inherit;
+    line-height: inherit;
+}
+.lcshop-detail-tech-txt-txt ul li{
+    font-size: inherit;
     line-height: 1.2;
     padding: 0 0 .5em 0;
+    list-style-type: disc;
+    list-style-position: outside;
+    margin: 0 0 0 1em;
+
 }
 
 .shop_content_detail_media_cnt {
