@@ -402,14 +402,18 @@ body{ font-family: Helvetica, sans-serif; background: #FFF; line-height: 1.4; fo
 				.main_paragraph_in{width: 80%; padding-right: 10px; box-sizing: border-box;}
 				.sb_paragraph_in{width: 20%; min-width: 200px;}
 
-		.entity_custom_items_cnt{ padding: 10px 0 5px 0;}
-		.entity_custom_items_cnt .custom_field-row_item{display: grid; align-items: start; grid-template-columns: 25% auto 5%; padding: 0 10px;}
-		.entity_custom_items_cnt .custom_field-row_item .del_trg_cnt{padding: 25px 0 0 10px;}
-	/*	.entity_custom_items_cnt .custom_field-row_item:nth-child(odd){ background-color: #f2f3f7;} 
 
-	.entity_custom_items_cnt .custom_field-row_item .form-group{margin: 0;}
-*/
-.entity_custom_items_cnt .custom_field-row_item{padding: 0;}
+		.custom_fields_component_cnt{padding: 10px 0 0 0;  border: 1px solid #e5e5e5; border-radius: 10px;}
+			
+		.entity_custom_header_tools{padding: 10px 10px 0 10px; display: flex; justify-content: space-between; align-items: center;}
+			.entity_custom_header_tools h6{margin: 0; font-size: 16px; font-weight: 600; color: var(--arancione);}
+			.entity_custom_header_tools button{padding: 10px 15px; background: var(--arancione); color: #FFF; border: none; box-shadow: 2px 2px 5px #00000017; font-size: 15px; cursor: pointer;}
+		.entity_custom_items_cnt{ padding: 0 0; margin-top: 10px; background-color: #f7f8fc; border-radius: 0 0 10px 10px; overflow: hidden; }
+		.entity_custom_items_cnt .custom_field-row_item{ box-sizing: border-box; display: grid; align-items: start; grid-template-columns: 25% auto 5%; padding: 0 10px; border-bottom: 1px solid #e5e5e5; gap: 10px;}
+		.entity_custom_items_cnt .custom_field-row_item .del_trg_cnt{padding: 25px 0 0 10px;}
+		.entity_custom_items_cnt .custom_field-row_item:nth-child(odd){ background-color: #f2f3f7;} 
+		.entity_custom_items_cnt .custom_field-row_item:nth-child(even){ background-color: #fafafa;} 
+		.entity_custom_items_cnt .custom_field-row_item:last-child{border-radius: 0 0 10px 10px; border-bottom: none;} 
 
 		.form-field-simple_main_img_id{position: relative;}
 
