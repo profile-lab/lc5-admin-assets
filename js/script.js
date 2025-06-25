@@ -7,7 +7,7 @@ let conta_new_custom_field_item = 0;
 let row_to_del_arr = [];
 // 
 var clickModalImgFun = false;
-var thumbs_folder = '/uploads/thumbs/';
+// var thumbs_folder = '/uploads/thumbs/';
 var thumb_default = '/assets/lc-admin-assets/img/thumb-default.png';
 let tmp_gallery_array = {};
 // 
